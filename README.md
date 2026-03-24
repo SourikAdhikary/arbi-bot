@@ -77,6 +77,10 @@ src/
     └── endgame.py     # Near-resolution sniping
 ```
 
+## License
+
+[Apache License 2.0](LICENSE)
+
 ## Disclaimer
 
 This is a trading tool, not a guaranteed money maker. Prediction markets are competitive. Always start with small amounts, use dry-run mode extensively, and never risk more than you can afford to lose.
