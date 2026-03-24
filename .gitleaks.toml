@@ -1,0 +1,16 @@
+# Local gitleaks config: extend default rules, allowlist paths that are gitignored
+# so `gitleaks detect --no-git` matches "what we intend to commit".
+title = "arbi-bot"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Secrets live only in .env (gitignored). Build/cache dirs are not part of the repo."
+paths = [
+  '''(?i)(^|/)\.env$''',
+  '''(?i)(^|/)\.env\.[^/]+$''',
+  '''(?i)(^|/)logs/''',
+  '''(?i)(^|/)\.venv/''',
+  '''(?i)(^|/)arb-engine/target/''',
+]

@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+arbi-bot.log
+logs/
+.DS_Store
+arb-engine/target/
